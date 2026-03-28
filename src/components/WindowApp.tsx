@@ -27,7 +27,7 @@ export default function WindowApp() {
   const [history, setHistory] = useState<CheckInEntry[]>(() => {
     const saved = localStorage.getItem("wot-history");
     if (saved) return JSON.parse(saved).map((e: any) => ({ ...e, timestamp: new Date(e.timestamp) }));
-    return generateSampleHistory();
+    return [];
   });
   const [weekTracker, setWeekTracker] = useState<(ZoneType)[]>(() => {
     const saved = localStorage.getItem("wot-week");
