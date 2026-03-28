@@ -129,13 +129,3 @@ export default function WindowApp() {
   );
 }
 
-function generateSampleHistory(): CheckInEntry[] {
-  const now = new Date();
-  return [
-    { zone: "safe", timestamp: new Date(now.getTime() - 2 * 60 * 60 * 1000) },
-    { zone: "hyper", timestamp: new Date(now.getTime() - 26 * 60 * 60 * 1000) },
-    { zone: "safe", timestamp: new Date(now.getTime() - 50 * 60 * 60 * 1000) },
-    { zone: "hypo", timestamp: new Date(now.getTime() - 74 * 60 * 60 * 1000) },
-    { zone: "safe", timestamp: new Date(now.getTime() - 98 * 60 * 60 * 1000) },
-  ];
-}
