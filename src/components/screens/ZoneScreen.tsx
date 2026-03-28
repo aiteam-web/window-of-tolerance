@@ -99,11 +99,6 @@ export default function ZoneScreen({ zone, onContinue, onBack }: Props) {
         >
           {data.continueText}
         </button>
-        {zone !== "safe" && (
-          <button className="w-full py-3.5 rounded-2xl bg-destructive text-destructive-foreground font-medium hover:opacity-90 transition-all duration-300 hover:-translate-y-0.5">
-            I Need Immediate Support →
-          </button>
-        )}
       </div>
 
       <p className="text-xs text-muted-foreground text-center">{data.footer}</p>
